@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #371f76;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.question {
+    color: gold;
+    margin: 15px 0;
+}
+.question span{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.gif-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gif {
+    width: 100%;
+    height: auto;
+}
+.btn-group {
+    display: flex;
+    flex-direction: column; /* Change flex-direction to column */
+    align-items: center; /* Align buttons to the center horizontally */
+    width: 80%;
+    margin-top: 20px;
+    position: relative; /* Keep position relative for button container */
+}
+
+button {
+  
+    height: 50px;
+    color: gold;
+    font-size: 1.2em;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px white;
+    border: 2px solid gold;
+    font-size: 1.2em;
+    position: relative; /* Set position to relative */
+    margin-top: 10px; /* Add some top margin between the buttons */
+}
+
+button.yes-btn {
+    background: white;
+    width: 35%;
+    font-weight: 600;
+}
+
+button.no-btn {
+    background: white;
+    color: gold;
+    width:35%;
+    font-weight: 600;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .btn-group {
+        flex-direction: column;
+    }
+
+    button {
+        
+        margin-top: 10px;
+    }
+
+}
